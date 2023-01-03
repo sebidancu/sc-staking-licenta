@@ -7,23 +7,25 @@
 elrond_wasm_node::wasm_endpoints! {
     mycrowdfunding
     (
-        buy_ticket
-        claimfunds
-        getCounter
-        getDeadline
-        getMaxTicketsPerAddress
-        getPrize
-        getStatus
-        getTicketHolder
-        getTicketPrice
-        getTicketsPerAddress
-        set_maxtickets_per_wallet
-        set_price
-        setdevwallet
-        setnftwallet
-        setteamwallet
-        start_lottery
-        winner
+        claim_funds
+        claim_nft
+        claim_rewards
+        getFreezeTime
+        getIdentifier
+        getIdentifierReward
+        getNftFreeze
+        getNftInfo
+        getNonce
+        getRewardPerMonth
+        getRewardStatus
+        getRewardVariabila
+        getWallet
+        reward_status
+        set_freeze_time
+        set_max_reward_per_month_per_nft
+        set_reward_identifier
+        stake_nft
+        withdraw_request
     )
 }
 

@@ -1,6 +1,6 @@
 use elrond_wasm::{
     api::ManagedTypeApi,
-    types::{ManagedAddress, TokenIdentifier, BigUint},
+    types::{TokenIdentifier, BigUint},
 };
 
 elrond_wasm::derive_imports!();
@@ -8,13 +8,14 @@ elrond_wasm::derive_imports!();
 #[derive(NestedEncode, NestedDecode, TopEncode, TopDecode, TypeAbi)]
 
 pub struct NftInfo<M: ManagedTypeApi> {
-    pub address: ManagedAddress<M>, 
     pub token_identifier: TokenIdentifier<M>,
     pub nft_nonce: u64,
     pub timestamp: u64,
     pub reward: BigUint<M>,
+    pub withdraw_timestamp: u64,
 }
 
+//MultiValueEncoded<MultiValue4<TokenIdentifier,u64,u64,BigUint>>
 /* IDEI UTILE
 
 self.transfer_or_save_payment(

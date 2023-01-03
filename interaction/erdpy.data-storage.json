@@ -1,0 +1,8 @@
+{
+    "*": {
+        "address-devnet": "",
+        "address-testnet": "",
+        "deployTransaction-testnet": "",
+        "deployTransaction-devnet": ""
+    }
+}
